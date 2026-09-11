@@ -8,9 +8,15 @@
   </div>
   <div class="examples-grid">
   <div class="example">
-    <h2>LabelAtom</h2>
+    <div class="example-title">
+      <h2>LabelAtom</h2>
+      <span class="help-tip">
+        <button type="button" aria-label="Ayuda sobre LabelAtom">?</button>
+        <span class="help-message">Es una etiqueta pequeña. La usamos para mostrar rápidamente si algo está disponible, en revisión o en borrador.</span>
+      </span>
+    </div>
     <span class="component-tag">dsb-label-atom</span>
-    <p>Identifica estados de forma rápida y consistente.</p>
+    <p>Una pieza pequeña para mostrar estados.</p>
     <div class="demo-row">
     <dsb-label-atom text="Disponible" tone="green"></dsb-label-atom>
     <dsb-label-atom text="En revisión" tone="blue"></dsb-label-atom>
@@ -18,9 +24,15 @@
     </div>
   </div>
   <div class="example">
-    <h2>ActionButtonAtom</h2>
+    <div class="example-title">
+      <h2>ActionButtonAtom</h2>
+      <span class="help-tip">
+        <button type="button" aria-label="Ayuda sobre ActionButtonAtom">?</button>
+        <span class="help-message">Es un botón sencillo que se puede reutilizar. Cuando se presiona, avisa al componente que lo está usando.</span>
+      </span>
+    </div>
     <span class="component-tag">dsb-action-button-atom</span>
-    <p>Dispara una acción con dos estilos visuales.</p>
+    <p>Un botón que sirve para realizar una acción.</p>
     <div class="demo-row">
     <dsb-action-button-atom text="Probar acción" (pressed)="notify()"></dsb-action-button-atom>
     <dsb-action-button-atom text="Cancelar" style="outline"></dsb-action-button-atom>

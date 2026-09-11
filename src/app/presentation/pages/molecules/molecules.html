@@ -4,16 +4,28 @@
   <p>Combinan átomos para resolver una tarea concreta.</p>
   <div class="examples-grid">
   <div class="example">
-    <h2>SearchBoxMolecule</h2>
+    <div class="example-title">
+      <h2>SearchBoxMolecule</h2>
+      <span class="help-tip">
+        <button type="button" aria-label="Ayuda sobre SearchBoxMolecule">?</button>
+        <span class="help-message">Junta un campo para escribir y un botón. Así el usuario puede escribir algo y mandar la búsqueda.</span>
+      </span>
+    </div>
     <span class="component-tag">dsb-search-box-molecule</span>
-    <p>Une un campo de texto con un botón de búsqueda.</p>
+    <p>Un campo y un botón trabajando juntos.</p>
     <dsb-search-box-molecule (searched)="search($event)"></dsb-search-box-molecule>
     <p>{{ searchMessage }}</p>
   </div>
   <div class="example">
-    <h2>ProfileSummaryMolecule</h2>
+    <div class="example-title">
+      <h2>ProfileSummaryMolecule</h2>
+      <span class="help-tip">
+        <button type="button" aria-label="Ayuda sobre ProfileSummaryMolecule">?</button>
+        <span class="help-message">Muestra de forma resumida quién es la persona y qué rol tiene. También reutiliza la etiqueta de estado.</span>
+      </span>
+    </div>
     <span class="component-tag">dsb-profile-summary-molecule</span>
-    <p>Presenta identidad y rol usando un átomo de etiqueta.</p>
+    <p>Un resumen sencillo de una persona.</p>
     <dsb-profile-summary-molecule [profile]="profile"></dsb-profile-summary-molecule>
   </div>
   </div>
