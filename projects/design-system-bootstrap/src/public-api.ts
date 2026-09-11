@@ -1,19 +1,7 @@
-/*
- * Public API Surface of design-system-bootstrap
- */
-
-//Interfaces
 export * from './lib/core/interfaces/core.interface';
 
-//Atoms
-export { IconAtom } from './lib/presentation/atoms/icon/icon.atom';
-export { BadgeAtom } from './lib/presentation/atoms/badge/badge.atom';
-export { ButtonAtom } from './lib/presentation/atoms/button/button.atom';
-export { ContainerAtom } from './lib/presentation/atoms/container/container-atom';
-
-//Molecules
-export { NavLinkMolecule } from './lib/presentation/molecules/nav-link/nav-link.molecule';
-export { ButtonGroupMolecule } from './lib/presentation/molecules/button-group/button-group.molecule';
-
-//Organisms
-export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
+export { LabelAtom } from './lib/presentation/atoms/label/label';
+export { ActionButtonAtom } from './lib/presentation/atoms/action-button/action-button';
+export { SearchBoxMolecule } from './lib/presentation/molecules/search-box/search-box';
+export { ProfileSummaryMolecule } from './lib/presentation/molecules/profile-summary/profile-summary';
+export { DashboardHeaderOrganism } from './lib/presentation/organisms/dashboard-header/dashboard-header';
