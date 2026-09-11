@@ -1,0 +1,14 @@
+.action-button {
+  background: #1d4ed8;
+  border: 1px solid #1d4ed8;
+  border-radius: 0.45rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+}
+
+.action-button.outline {
+  background: white;
+  color: #1d4ed8;
+}

@@ -1,39 +1,16 @@
 import { Component } from '@angular/core';
-import { 
-  ButtonGroupData, 
-  ButtonGroupMolecule, 
-  ContainerAtom, 
-  NavLink, 
-  NavLinkMolecule 
-} from '@brejcha13320/design-system-bootstrap';
+import { ProfileSummaryMolecule, SearchBoxMolecule } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   templateUrl: './molecules.html',
-  imports: [
-    ContainerAtom,
-    ButtonGroupMolecule,
-    NavLinkMolecule,
-  ],
+  imports: [SearchBoxMolecule, ProfileSummaryMolecule],
 })
 export class Molecules {
-  buttonsGroupData: ButtonGroupData[] = [
-    { idButton: 'idButtonPrimary', type: 'primary', text: 'Text Primary' },
-    { idButton: 'idButtonSecondary', type: 'secondary', text: 'Text Secondary' },
-    { idButton: 'idButtonSuccess', type: 'success', text: 'Text Success' },
-    { idButton: 'idButtonDanger', type: 'danger', text: 'Text Danger' },
-    { idButton: 'idButtonWarning', type: 'warning', text: 'Text Warning' },
-    { idButton: 'idButtonInfo', type: 'info', text: 'Text Info' },
-    { idButton: 'idButtonLight', type: 'light', text: 'Text Light' },
-    { idButton: 'idButtonDark', type: 'dark', text: 'Text Dark' },
-  ];
+  searchMessage = 'Escribe algo para probar la búsqueda.';
 
-  navLinks: NavLink[] = [
-    { text: 'Link 1', url: '/atoms' },
-    { text: 'Link 2', url: '/molecules' },
-    { text: 'Link 3', url: '/organisms' },
-  ];
+  profile = { name: 'Felipe Marulanda', role: 'Estudiante', initials: 'FM' };
 
-  onClick(idButton: string){
-    alert(`Click en el Boton de Grupo ${idButton}`);
+  search(query: string): void {
+    this.searchMessage = query ? `Última búsqueda: ${query}` : 'La búsqueda está vacía.';
   }
 }

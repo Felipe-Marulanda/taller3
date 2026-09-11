@@ -1,0 +1,11 @@
+.label {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+}
+
+.label-blue { background: #dbeafe; color: #1d4ed8; }
+.label-green { background: #dcfce7; color: #15803d; }
+.label-gray { background: #f3f4f6; color: #4b5563; }

@@ -1,11 +1,13 @@
-<dsb-container-atom title="Button Group" >
-    <dsb-button-group-molecule 
-        [buttonsGroupData]="buttonsGroupData" 
-        (clicker)="onClick($event)" >
-    </dsb-button-group-molecule>
-</dsb-container-atom>
-
-<dsb-container-atom title="Nav Link" >
-    <dsb-nav-link-molecule [navLinks]="navLinks">
-    </dsb-nav-link-molecule>
-</dsb-container-atom>
+<section class="showcase">
+  <h1>Moléculas</h1>
+  <p>Combinan átomos para resolver una tarea concreta.</p>
+  <div class="example">
+    <h2>SearchBoxMolecule</h2>
+    <dsb-search-box-molecule (searched)="search($event)"></dsb-search-box-molecule>
+    <p>{{ searchMessage }}</p>
+  </div>
+  <div class="example">
+    <h2>ProfileSummaryMolecule</h2>
+    <dsb-profile-summary-molecule [profile]="profile"></dsb-profile-summary-molecule>
+  </div>
+</section>

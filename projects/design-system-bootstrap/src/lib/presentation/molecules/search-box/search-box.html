@@ -1,0 +1,4 @@
+<div class="search-box">
+  <input type="search" placeholder="Buscar componente" [value]="query" (input)="onInput($event)">
+  <dsb-action-button-atom text="Buscar" (pressed)="searched.emit(query)"></dsb-action-button-atom>
+</div>

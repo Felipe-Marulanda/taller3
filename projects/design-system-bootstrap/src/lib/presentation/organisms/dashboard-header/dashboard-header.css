@@ -1,0 +1,3 @@
+.dashboard-header { align-items: center; background: #fff; border-bottom: 1px solid #e5e7eb; display: flex; gap: 2rem; justify-content: space-between; padding: 1.25rem 2rem; }
+.dashboard-header h2 { font-size: 1.25rem; margin: 0; }
+.dashboard-header p { color: #6b7280; margin: 0.25rem 0 0; }
