@@ -15,6 +15,7 @@ export class SearchBoxMolecule {
   /** Envía la búsqueda al showcase. */
   @Output() searched = new EventEmitter<string>();
 
+  /** Actualiza el texto cuando el usuario escribe en el input. */
   onInput(event: Event): void {
     this.query = (event.target as HTMLInputElement).value;
   }
