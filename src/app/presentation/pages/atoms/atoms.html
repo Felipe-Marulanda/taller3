@@ -1,16 +1,31 @@
 <section class="showcase">
+  <span class="eyebrow">01 / piezas base</span>
   <h1>Átomos</h1>
   <p>Son las piezas pequeñas que se pueden repetir en otras composiciones.</p>
+  <div class="metrics">
+    <span class="metric"><strong>02</strong>componentes</span>
+    <span class="metric"><strong>100%</strong>reutilizables</span>
+  </div>
+  <div class="examples-grid">
   <div class="example">
     <h2>LabelAtom</h2>
+    <span class="component-tag">dsb-label-atom</span>
+    <p>Identifica estados de forma rápida y consistente.</p>
+    <div class="demo-row">
     <dsb-label-atom text="Disponible" tone="green"></dsb-label-atom>
     <dsb-label-atom text="En revisión" tone="blue"></dsb-label-atom>
     <dsb-label-atom text="Borrador" tone="gray"></dsb-label-atom>
+    </div>
   </div>
   <div class="example">
     <h2>ActionButtonAtom</h2>
+    <span class="component-tag">dsb-action-button-atom</span>
+    <p>Dispara una acción con dos estilos visuales.</p>
+    <div class="demo-row">
     <dsb-action-button-atom text="Probar acción" (pressed)="notify()"></dsb-action-button-atom>
     <dsb-action-button-atom text="Cancelar" style="outline"></dsb-action-button-atom>
+    </div>
     <p>{{ message }}</p>
+  </div>
   </div>
 </section>

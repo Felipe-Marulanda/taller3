@@ -1,3 +1,17 @@
-<main>
+<header class="site-header">
+  <a class="brand" routerLink="/atoms">
+    <span class="brand-mark">DS</span>
+    <span>
+      <strong>Uceva Design</strong>
+      <small>Atomic system</small>
+    </span>
+  </a>
+  <nav aria-label="Navegación principal">
+    <a routerLink="/atoms" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Átomos</a>
+    <a routerLink="/molecules" routerLinkActive="active">Moléculas</a>
+    <a routerLink="/organisms" routerLinkActive="active">Organismos</a>
+  </nav>
+</header>
+<main class="page">
   <router-outlet />
 </main>

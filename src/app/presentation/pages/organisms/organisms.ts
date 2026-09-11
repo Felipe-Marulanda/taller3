@@ -7,5 +7,5 @@ import { DashboardHeaderOrganism } from '@brejcha13320/design-system-bootstrap';
   imports: [DashboardHeaderOrganism],
 })
 export class Organisms {
-  profile = { name: 'Santiago Ramírez', role: 'Colaborador', initials: 'SR' };
+  profile = { name: 'Santiago Santacruz', role: 'Colaborador', initials: 'SS' };
 }
