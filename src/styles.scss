@@ -48,8 +48,12 @@ body { background: #f4f7fb; color: #243b53; font-family: 'DM Sans', sans-serif; 
 }
 .help-tip:hover .help-message, .help-tip:focus-within .help-message { opacity: 1; transform: translateX(-50%) translateY(0); }
 .demo-row { align-items: center; display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.25rem; }
-.wide { padding: 0; overflow: hidden; }
+.wide { padding: 0; overflow: visible; }
 .organism-help { align-items: center; background: #f8fafc; color: #486581; display: flex; gap: 0.6rem; padding: 1rem 1.5rem; }
+.organism-help .help-tip { display: inline-flex; }
+.organism-help .help-message { left: 0; transform: translateY(0.25rem); }
+.organism-help .help-tip:hover .help-message,
+.organism-help .help-tip:focus-within .help-message { transform: translateY(0); }
 .metrics { display: flex; gap: 0.75rem; margin-top: 2rem; }
 .metric { background: #e8f7f4; border-radius: 0.65rem; color: #166e63; padding: 0.65rem 0.9rem; }
 .metric strong { display: block; font-size: 1.2rem; }
